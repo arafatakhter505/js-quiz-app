@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- intro section start -->
+    <section id="intro" class="container">
+      <div class="intro-header">
+        <img src="images/intro.png" alt="" />
+      </div>
+      <div class="intro-body">
+        <img src="images/idea.png" alt="" />
+      </div>
+      <div class="intro-footer">
+        <button class="btn" id="continue-btn">Continue</button>
+      </div>
+    </section>
+    <!-- intro section end -->
+
+    <!-- quiz rules section start -->
+    <section id="rules" class="container">
+      <div class="rules-header">
+        <h2>Quiz Rules</h2>
+      </div>
+      <div class="rules-body">
+        <ol>
+          <li>You will have only 15 seconds per each question.</li>
+          <li>Once you select your answer, it can't be undone.</li>
+          <li>You can't select any option once time goes off.</li>
+          <li>You can't exit from the Quiz while you're playing.</li>
+          <li>You'll get points on the basis of your correct answers.</li>
+        </ol>
+      </div>
+      <div class="rules-footer">
+        <button class="btn" id="exit-btn">Exit Quiz</button>
+        <button class="btn" id="start-btn">Start Quiz</button>
+      </div>
+    </section>
+    <!-- quiz rules section end -->
+
+    <!-- quiz question section start -->
+    <section id="question" class="container">
+      <div class="question-header">
+        <h2>Start Quiz</h2>
+        <div>Time Left <span id="left-time"></span> Sec</div>
+      </div>
+      <div class="question-body">
+        <h3 id="question-title"></h3>
+        <ul id="qustion-container"></ul>
+      </div>
+      <div class="question-footer">
+        <h4>
+          <span id="current-quiz"></span> Of <span id="total-quiz"></span>
+        </h4>
+        <button class="btn" id="next-btn">Next Quiz</button>
+        <button class="btn" id="result-btn">Quiz Result</button>
+      </div>
+    </section>
+    <!-- quiz question section end -->
+
+    <!-- result section start -->
+    <section id="result" class="container">
+      <div class="result-header">
+        <img src="images/result.jpg" alt="" />
+      </div>
+      <div class="result-body">
+        <h1><span id="quiz-result"></span>/<span id="total-r-quiz"></span></h1>
+      </div>
+      <div class="result-footer">
+        <button class="btn" id="replay-btn">Replay Quiz</button>
+        <button class="btn" id="exit-r-btn">Exit Quiz</button>
+      </div>
+    </section>
+    <!-- result section end -->
+
+    <!-- custon js -->
+    <script src="js/script.js"></script>
+    <!-- question js -->
+    <script src="js/question.js"></script>
+  </body>
+</html>
